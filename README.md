@@ -1,3 +1,4 @@
+![Docker](https://github.com/fredrikhgrelland/docker-hadoop/workflows/Docker/badge.svg)
 # docker-hadoop
 Docker build for hadoop based on openjdk:8-alpine. Used as base-image for [fredrikhgrelland/docker-hive](https://github.com/fredrikhgrelland/docker-hadoop)
 
