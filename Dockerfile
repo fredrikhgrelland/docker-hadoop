@@ -3,7 +3,7 @@ FROM openjdk:8-alpine
 # Allow buildtime config of HADOOP_VERSION
 ARG HADOOP_VERSION
 # Set HADOOP_VERSION from arg if provided at build, env if provided at run, or default
-ENV HADOOP_VERSION=${HADOOP_VERSION:-3.1.0}
+ENV HADOOP_VERSION=${HADOOP_VERSION:-3.1.1}
 ENV DOWNLOAD https://archive.apache.org/dist/hadoop/core/hadoop-$HADOOP_VERSION/hadoop-$HADOOP_VERSION.tar.gz
 ENV HADOOP_HOME=/opt/hadoop-$HADOOP_VERSION
 ENV HADOOP_CONF_DIR=/etc/hadoop
