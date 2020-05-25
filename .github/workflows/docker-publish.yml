@@ -53,7 +53,7 @@ jobs:
         run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
 
       - name: Log into registry (dockerhub)
-        run: echo "${{ secrets.DOCKER_TOKEN }}" | docker login docker.pkg.github.com -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
+        run: echo "${{ secrets.DOCKER_TOKEN }}" | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
 
       - name: Push image to github packages
         run: |
